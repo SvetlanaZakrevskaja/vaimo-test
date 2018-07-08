@@ -1,0 +1,59 @@
+.header {
+  margin-bottom: 26px;
+
+  @include breakpoint(m) {
+    margin-bottom: 10px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    background-color: $ocean;
+    height: 20px;
+    width: 100%;
+
+    @include breakpoint(mt) {
+      height: 10px;
+    }
+
+  }
+
+  &-wp {
+    position: relative;
+  }
+
+  &__logo {
+    padding: 20px 0 14px;
+    display: inline-block;
+
+    @include breakpoint(m) {
+      padding: 14px 0;
+    }
+
+    img {
+      @include breakpoint(mt) {
+        width: 150px;
+      }
+      @include breakpoint(m) {
+        width: 130px;
+      }
+    }
+
+  }
+
+  &__cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    font-size: 12px;
+
+    @include breakpoint(m) {
+      width: 100%;
+    }
+
+  }
+
+
+}

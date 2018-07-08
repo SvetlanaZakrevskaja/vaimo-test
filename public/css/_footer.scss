@@ -1,0 +1,147 @@
+.footer {
+  min-height: 290px;
+  background-color: $grey;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  color: #fff;
+  box-sizing: border-box;
+
+  @include breakpoint(m) {
+    padding-bottom: 45px;
+  }
+
+}
+
+.footer-menu,
+.subscribe {
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+.footer-menu-list {
+
+  &__item {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  &__item_link {
+    color: #fff;
+  }
+
+}
+
+.top-categories,
+.customer-service {
+  float: left;
+  margin-right: 80px;
+
+  @include breakpoint(t) {
+    margin-right: 55px;
+  }
+  @include breakpoint(m) {
+    float: none;
+  }
+
+}
+
+.customer-service {
+
+  @include breakpoint(m) {
+    margin-top: 14px;
+  }
+
+}
+
+.subscribe {
+  width: 380px;
+  float: right;
+  font-size: 0;
+  line-height: 0;
+
+  @include breakpoint(t) {
+    width: 312px;
+  }
+  @include breakpoint(mt) {
+    margin-top: 20px;
+    float: left;
+  }
+  @include breakpoint(m) {
+    margin-top: 14px;
+    float: none;
+    width: 100%;
+  }
+
+  &__title {
+    line-height: 25px;
+    @include breakpoint(m) {
+      margin-bottom: 14px;
+    }
+  }
+
+}
+
+.subscribe-form {
+  position: relative;
+
+  &__input {
+    height: 28px;
+    line-height: 28px;
+    width: 262px;
+    margin-right: 5px;
+    padding: 0 10px 0 35px;
+    box-sizing: border-box;
+    font-size: 12px;
+    background: url("../img/email-icon.png") 8px center no-repeat;
+
+    @include breakpoint(t) {
+      width: 198px;
+    }
+    @include breakpoint(m) {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    & + span {
+      font-size: 12px;
+      font-style: italic;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      padding-left: 22px;
+      line-height: 18px;
+
+      @include breakpoint(m) {
+        top: 72px;
+        left: 68px;
+      }
+
+    }
+
+  }
+
+  &__button {
+    @include breakpoint(m) {
+      width: 100%;
+    }
+  }
+
+}
+
+.error {
+  color: $error-red;
+  background: url("../img/error-icon.png") 0 center no-repeat;
+}
+.success {
+  color: $green;
+  background: url("../img/success-icon.png") 0 center no-repeat;
+}
+.loading {
+  background: url("../img/spinner.gif") 0 0 no-repeat;
+}

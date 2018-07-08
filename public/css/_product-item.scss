@@ -1,0 +1,111 @@
+.products {
+  margin-bottom: 30px;
+
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    position: relative;
+
+    @include breakpoint(m) {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $dark-blue;
+
+      @include breakpoint(m) {
+        display: none;
+      }
+
+    }
+
+    span {
+      margin-left: 28px;
+      padding: 0 16px;
+      background-color: #fff;
+      position: relative;
+
+      @include breakpoint(m) {
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+
+  }
+
+}
+
+.product-item-wp {
+  font-size: 0;
+}
+.product-item {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  font-size: 14px;
+  text-align: center;
+
+  @include breakpoint(t) {
+    width: 172px;
+  }
+  @include breakpoint(mt) {
+    width: 48%;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  @include breakpoint(m) {
+    width: 130px;
+  }
+
+  &:nth-of-type(2n) {
+    @include breakpoint(mt) {
+     float: right;
+    }
+  }
+  &:nth-of-type(4n) {
+    margin-right: 0;
+  }
+
+  &__img {
+    padding: 10px;
+    border: 1px solid $darker-grey;
+    margin-bottom: 18px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  &__price {
+    margin-bottom: 10px;
+  }
+  .line {
+    text-decoration: line-through;
+  }
+  .special-price {
+    color: $red;
+    margin-left: 4px;
+  }
+
+}

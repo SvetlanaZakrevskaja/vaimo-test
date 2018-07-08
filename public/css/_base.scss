@@ -1,0 +1,68 @@
+body {
+  color: $dark-blue;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.main-wrap {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+
+  @include breakpoint(t) {
+    width: 748px;
+  }
+  @include breakpoint(mt) {
+    width: 460px;
+  }
+  @include breakpoint(m) {
+    width: 290px;
+  }
+
+}
+
+.clear {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  li {
+    list-style-type: none;
+  }
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  line-height: 30px;
+  padding: 0 15px;
+  color: #fff;
+  background-color: $ocean;
+  border-radius: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
