@@ -20,6 +20,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
-### How to start server oo your computer
+### How to start server on your computer
 
 php -S localhost:8080 -t public
